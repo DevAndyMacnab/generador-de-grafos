@@ -8,7 +8,7 @@ vertices = input("Ingrese los vertices separados por comas:").split(",")
 for element in vertices:
     G.add_node(element)
     
-aristas=input("Ingrese las aristas separadas por comas: ").split(",")
+aristas=input("Ingrese las aristas separadas por comas:  ").split(",")
 
 for elemento in aristas:
     G.add_edge(elemento[0],elemento[1])
@@ -25,3 +25,7 @@ ruta=nx.bfs_tree(G,inicio)
 
 nx.draw(ruta, with_labels=True)
 plt.show()
+
+
+#TODO
+#AGREGAR UNA INTERFAZ GRAFICA QUE RECIBA LOS DATOS DEL USUARIO Y LE MUESTRE POR VENTANA AMBAS GRAFICAS
