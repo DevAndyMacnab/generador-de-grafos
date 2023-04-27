@@ -45,9 +45,7 @@ class Principal:
         aristas=self.aristasEntry.get()
         self.grafo=generarGrafo(vertices,aristas,self.generarAlgoritmo)
         if (self.grafo):
-            
-           pass            
-            
+           print("todo bien")          
         else:
             messagebox.showinfo(message="Ha ocurrido un error para generar el grafo", title="Error del Sistema")
             

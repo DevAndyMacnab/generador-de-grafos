@@ -18,10 +18,8 @@ def generarGrafo(listaVertices,listaAristas,habilitarBoton):
         nx.draw(G, with_labels=True)
         habilitarBoton["state"]="normal"
         plt.figure(1)
-        
-        
-        generarAlgoritmo(G)
-        return True
+        plt.show()
+        return G
         
     except:
         return False
@@ -34,8 +32,7 @@ def generarAlgoritmo(G):
     ruta=nx.bfs_tree(G,inicio)
 
     nx.draw(ruta, with_labels=True)
-    print("Si funciona")
-    plt.figure(2)
+    plt.figure(1)
     plt.show()
 
 
